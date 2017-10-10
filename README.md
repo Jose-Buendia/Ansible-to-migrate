@@ -25,3 +25,10 @@ command:
 Once done, you can check the results by browsing to http://localhost/index.php.
 You should see a simple test page and a list of databases retrieved from the
 database server.
+
+Para desplegar los servicios se siguen los siguientes pasos
+
+1. Generar Imagen (Dockerfile Ubuntu)
+2. Generar Dockers
+3. Modoficar los hosts
+4. Modificar Ansible

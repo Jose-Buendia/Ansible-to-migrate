@@ -12,9 +12,9 @@ En el directorio encontraremos el archivo Dockerfile para la creacion de imagen 
 
 $ (sudo) docker build -t {{ nombre imagen }} .
 
-En mi caso el {{ nombre contenedor }} será server_migrate
+En mi caso el {{ nombre contenedor }} será server
 
-$ (sudo) docker build -t server_migrate .
+$ (sudo) docker build -t server .
 
 Para el siguiente paso seria el despliegue
 
@@ -24,11 +24,11 @@ Crearemos un conjunto de maquinas para el despliegue, se creará un servidor web
 
 Nombre del contenedor web = web_server
 
-$ (sudo) docker run -d -P --name web_server -p 2221:22 -p 80:80 server_migrate
+$ (sudo) docker run -d -P --name web_server -p 2221:22 -p 80:80 server
 
 Nombre del contenedor mysql = mysql_server
 
-$ (sudo) docker run -d -P --name mysql_server -p 2222:22 -p 3306:3306 server_migrate
+$ (sudo) docker run -d -P --name mysql_server -p 2222:22 -p 3306:3306 server
 
 <h1>El paso siguiente seria la configuración de los alias</h1>
 

@@ -24,11 +24,11 @@ Crearemos un conjunto de maquinas para el despliegue, se creará un servidor web
 
 Nombre del contenedor web = web_server
 
-$ (sudo) docker run -d -P --name web_server -p 2221:22 -p 80:80 server_parcial
+$ (sudo) docker run -d -P --name web_server -p 2221:22 -p 80:80 server_migrate
 
 Nombre del contenedor mysql = mysql_server
 
-$ (sudo) docker run -d -P --name mysql_server -p 2222:22 -p 3306:3306 server_parcial
+$ (sudo) docker run -d -P --name mysql_server -p 2222:22 -p 3306:3306 server_migrate
 
 El paso siguiente seria la configuración de los alias
 

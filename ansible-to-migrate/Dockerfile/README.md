@@ -12,9 +12,9 @@ Configuraciones básicas y creación de dockers de prueba los veremos en los sig
 
 $ (sudo) docker build -t {{ nombre imagen }} .
 
-En mi caso el {{ nombre contenedor }} será server_parcial
+En mi caso el {{ nombre contenedor }} será server_migrate
 
-$ (sudo) docker build -t server_parcial .
+$ (sudo) docker build -t server_migrate .
 
 Para el siguiente paso seria el despliegue
 

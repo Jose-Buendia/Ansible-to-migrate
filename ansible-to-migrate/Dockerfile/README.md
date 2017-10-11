@@ -1,8 +1,8 @@
-<h1>Configuracion de los docker<h1>
+<h1>Configuracion de los docker</h1>
 
 En el directorio encontraremos el archivo Dockerfile para la creacion de imagen la cual nos permitira crear los contenedores del docker ademas del archivo (authorized_keys) que esto sirve para la autenticacion por llaves en el servicio ssh de cada contenedor.
 
-#Configuraciones básicas y creación de dockers de prueba los veremos en los siguientes pasos:
+<h1>Configuraciones básicas y creación de dockers de prueba los veremos en los siguientes pasos:</h1>
 
 *Construir un docker personalizado que incluye el servidor openssh
 
@@ -30,7 +30,7 @@ Nombre del contenedor mysql = mysql_server
 
 $ (sudo) docker run -d -P --name mysql_server -p 2222:22 -p 3306:3306 server_migrate
 
-El paso siguiente seria la configuración de los alias
+<h1>El paso siguiente seria la configuración de los alias</h1>
 
 Opción 1: edita el archivo /etc/hosts y adiciona 3 alias a localhost
 
@@ -44,7 +44,7 @@ Adicionar las llaves ssh
 
 ssh -o StrictHostKeyChecking=no root@web_server -p 2221 -i ../key.private hostname ssh -o StrictHostKeyChecking=no root@mysql_server -p 2222 -i ../key.private hostname
 
-y por ultimo seria la confirmación
+<h1>Por ultimo seria la confirmación</h1>
 
 Realizamos una prueba de conexión a las maquinas que se crearon recientemente, en el paso anterior donde secrearon dos maquinas con los puertos: -2221 -2222 abirto para la conexion esto es mas que todo verificar si realmente estan conectadas:
 

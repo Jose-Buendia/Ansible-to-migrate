@@ -1,8 +1,8 @@
-Configuracion de los docker
+#Configuracion de los docker
 
 En el directorio encontraremos el archivo Dockerfile para la creacion de imagen la cual nos permitira crear los contenedores del docker ademas del archivo (authorized_keys) que esto sirve para la autenticacion por llaves en el servicio ssh de cada contenedor.
 
-Configuraciones básicas y creación de dockers de prueba los veremos en los siguientes pasos:
+#Configuraciones básicas y creación de dockers de prueba los veremos en los siguientes pasos:
 
 *Construir un docker personalizado que incluye el servidor openssh
 

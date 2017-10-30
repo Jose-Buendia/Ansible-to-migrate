@@ -1,7 +1,0 @@
-[web]
-server01 ansible_port=2221 ansible_ssh_authorized_keys_file=../authorized.keys
-
-[dbservers]
-server02 ansible_port=2222 ansible_ssh_authorized_keys_file=../key.private
-
-

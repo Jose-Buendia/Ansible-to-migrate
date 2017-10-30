@@ -1,0 +1,28 @@
+---
+# These tasks install apache and the php modules.
+
+- name: Instalación de PHP y los requerimientos 
+  apt:
+   name: "{{ item }}"
+   state: present
+   update_cache: yes
+ whit_items: 
+    - php7.0-json
+    - php7.0-mbstring
+    - php7.0-intl
+    - php7.0-xml
+    - php7.0-mysql
+    - libapache2-mod-php7.0
+    - git
+    
+- name: Instalando PHP
+  apt:
+    name: apache2
+    state: present
+    
+- name: Iniciando servicio de apache
+  service:
+    name: apache2
+    state: present
+    enable: yes
+  
